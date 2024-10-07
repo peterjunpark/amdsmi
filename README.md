@@ -1,23 +1,33 @@
-# AMD System Management Interface (AMD SMI) Library
+# AMD System Management Interface (AMD SMI) library
 
-The AMD System Management Interface Library, or AMD SMI library, is a C library for Linux that provides a user space interface for applications to monitor and control AMD devices.
+The AMD System Management Interface (AMD SMI) library offers a unified tool for
+managing and monitoring GPUs, particularly in high-performance computing
+environments. It provides a user-space interface that allows applications to
+control GPU operations, monitor performance, and retrieve information about the
+system's drivers and GPUs.
 
-For additional information refer to [ROCm Documentation](https://rocm.docs.amd.com/projects/amdsmi/en/latest/)
+For information on available features, installation steps, API reference
+material, and helpful tips, refer to the online documentation at
+[rocm.docs.amd.com/projects/amdsmi](https://rocm.docs.amd.com/projects/amdsmi/en/latest/)
 
-Note: This project is a successor to [rocm_smi_lib](https://github.com/RadeonOpenCompute/rocm_smi_lib)
-
-and [esmi_ib_library](https://github.com/amd/esmi_ib_library)
+>[!NOTE]
+>This project is a successor to [rocm_smi_lib](https://github.com/ROCm/rocm_smi_lib)
+>and [esmi_ib_library](https://github.com/amd/esmi_ib_library).
 
 ## Supported platforms
 
-At initial release, the AMD SMI library will support Linux bare metal and Linux virtual machine guest for AMD GPUs. In the future release, the library will be extended to support AMD EPYC™ CPUs.
+At initial release, the AMD SMI library will support Linux bare metal and Linux
+virtual machine guest for AMD GPUs. In the future release, the library will be
+extended to support AMD EPYC™ CPUs.
 
 AMD SMI library can run on AMD ROCm supported platforms, refer to [System requirements (Linux)](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html) for more information.
 
 To run the AMD SMI library, the amdgpu driver and the hsmp driver needs to be installed. Optionally, the libdrm can be
 installed to query firmware information and hardware IPs.
 
-## Install CLI Tool and Libraries
+## Install AMD SMI library and CLI tool
+
+* [Install](https://rocm.docs.amd.com/projects/amdsmi/install/install.html)
 
 ### Requirements
 
@@ -302,7 +312,9 @@ In order to build the latest documentation, the following are required:
 
 The source code for AMD SMI is available on Github.
 
-After the AMD SMI library git repository has been cloned to a local Linux machine, the Default location for the library and headers is /opt/rocm. Before installation, the old rocm directories should be deleted:
+After the AMD SMI library git repository has been cloned to a local Linux
+machine, the Default location for the library and headers is /opt/rocm. Before
+installation, the old rocm directories should be deleted:
 /opt/rocm
 /opt/rocm-{number}
 
